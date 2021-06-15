@@ -576,7 +576,7 @@
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 7.25em;
 		}
 
 /* Footer */
@@ -898,7 +898,7 @@
 				margin-left: 0;
 				padding-left: 0;
 			}
-			
+
 		/*Skills*/
 		.skill { flex-basis:90px; }                                    
 		.skill:nth-child(5) { flex-basis:180px; }                        
