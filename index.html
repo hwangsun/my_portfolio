@@ -10,16 +10,45 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />                
         <link rel="stylesheet" href="assets/css/reset.css" />		
-        <link rel="stylesheet" href="assets/css/main.css" />		
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            #skills{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;                                
+            }
+
+            .skill{
+                flex: 0 1 130px;
+                display: block;                
+            }
+            
+            .skill:nth-child(5) { flex-basis:230px; }
+            .skill:nth-child(6) { flex-basis:140px; }
+            .skill:nth-child(7) { flex-basis:190px; }
+
+            .skill img{                
+                display: block;
+                width: 100%;
+                padding: 15%;
+            }
+
+            @media screen and (max-width: 440px) {
+                .skill { flex-basis:90px; }                                    
+                .skill:nth-child(5) { flex-basis:180px; }                        
+                .skill:nth-child(6) { flex-basis:100px; }
+                .skill:nth-child(7) { flex-basis:130px; }                                    
+            }
+        </style>            
 	</head>
 	<body>
     <!-- Header -->
         <header id="header">
             <div class="inner">
                 <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-                <h1><strong>I am Hwang-sun</strong>, a super simple<br />
-                responsive site template freebie<br />
-                crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+                <h1><strong>정황선 (Chung Hwang-sun)</strong></h1>
             </div>
         </header>
 
@@ -28,59 +57,82 @@
         <!-- One -->
             <section id="one">
                 <header class="major">
-                    <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                    magna sed accumsan arcu neque.</h2>
+                    <h2>안녕하세요. 웹 개발자 정황선입니다.</h2>
                 </header>
-                <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button">Learn More</a></li>
-                </ul>
+                <p>16년동안 웹 개발자로 서버 및 프론트엔드 사이드에서 다양한 경험이 했습니다. <br>
+                   Java, Spring Framework, jsp, JavaScript, PHP, Oracle, MySQL, MsSQL 등의 기술을 사용하여 웹 서비스를 구축 및 운영한 경험이 있으며, 
+                   빠르게 변화하는 IT 업계에서 뒤쳐지지 않기 위해 새로운 기술의 흐름 파악을 위해 항상 노력했고, 그중에서 Front-End 분야에 관심이 많습니다.</p>                
             </section>
 
         <!-- Two -->
-            <section id="two">
-                <h2>Project</h2>
-                <div class="row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <a href="#" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-                        <h3>Magna sed consequat tempus</h3>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <a href="#" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-                        <h3>Ultricies lacinia interdum</h3>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <a href="#" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-                        <h3>Tortor metus commodo</h3>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <a href="#" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-                        <h3>Quam neque phasellus</h3>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <a href="#" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-                        <h3>Nunc enim commodo aliquet</h3>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <a href="#" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-                        <h3>Risus ornare lacinia</h3>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </article>
+        <section id="Two">
+            <h2>Skills</h2>
+            <div class="row">
+                <div id="skills">
+                    <span class="skill"><img src="./images/thumbs/HTML5.png" alt="html5"></span>
+                    <span class="skill"><img src="./images/thumbs/css3.png" alt="css3"></span>
+                    <span class="skill"><img src="./images/thumbs/js.png" alt="javascript"></span>
+                    <span class="skill"><img src="./images/thumbs/java.png" alt="java"></span>
+                    <span class="skill"><img src="./images/thumbs/jquery.png" alt="jquery"></span>                    
+                    <span class="skill"><img src="./images/thumbs/java-jsp.png" alt="jsp"></span>                    
+                    <span class="skill"><img src="./images/thumbs/PHP-logo.svg.png" alt="php"></span>
                 </div>
-                <ul class="actions">
-                    <li><a href="#" class="button">Full Portfolio</a></li>
-                </ul>
-            </section>
+            </div>            
+        </section>
 
         <!-- Three -->
             <section id="three">
-                <h2>개인정보</h2>
-                <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                <h2>Project</h2>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://www.shinsegae.com" class="image fit thumb"  target="_new"><img src="images/thumbs/02_1.png" alt=""/></a>
+                        <h3>신세계 백화점 홈페이지 오픈 및 운영</h3>
+                        <p>신세계 백화점의 공식 홈페이지입니다. 행복한 라이프 스타일을 디자인하는 신세계 백화점의 최신 정보와 위치 및 고객정보, 문화센터의 등록 및 관리를 담당하는 채널입니다.<br>
+                        http://www.shinsegae.com
+                        </p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="http://blog.hyundaicardcapital.com" class="image fit thumb" target="_new"><img src="images/thumbs/01_1.jpg" alt="" /></a>
+                        <h3>현대카드, 캐피탈 공식 블로그 (9개 블로그)</h3>
+                        <p>현대카드캐피탈 공식 블로그는 문화마케팅, 광고, 기업문화, 사회공헌, 금융공학(금융경제) 등을 총망라하여, 현대카드캐피탈의 다양한 이야기를 전달하는 채널입니다.<br>
+                        http://blog.hyundaicardcapital.com</p>
+                    </article>
+                    
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="http://www.dunkindonuts.co.kr" class="image fit thumb" target="_new"><img src="images/thumbs/02_1.jpg" alt="" /></a>
+                        <h3>던킨도너츠</h3>
+                        <p>던킨도너츠
+                            매일매일 Dunkin Time! 타임 마케팅을 결합한 메인 U를 통해 던킨도너츠의 브랜딩 효과를 강화한 PC&Mobile 사이트 구축하였다.<br>
+                            http://www.dunkindonuts.co.kr</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="http://www.baskinrobbins.co.kr" class="image fit thumb" target="_new"><img src="images/thumbs/05_1.jpg" alt="" /></a>
+                        <h3>배스킨라빈스</h3>
+                        <p>매월 31일은 배스킨라빈스! 매달 출시되는 새로운 맛을 홍보하기 위한 고정 이벤트 성 콘텐츠기획을 통해 신규 제품 홍보를 극대화하였다.<br>
+                        http://www.baskinrobbins.co.kr</p>                        
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="http://apps.samsung.com" class="image fit thumb" target="_new"><img src="images/thumbs/06_1.jpg" alt="" /></a>
+                        <h3>삼성 바다</h3>
+                        <p>삼성 자체 모바일 플랫폼인 바다OS 를 2009년&nbsp;발표하고 약 4년간 운영해 오면서 이를 적용한 “웨이브 시리즈” 의 스마트 폰을 4종 출시했다. 
+                            <br>http://developer.bada.com</p>
+                    </article>  
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="http://www.oilbankcard.com" class="image fit thumb" target="_new"><img src="images/thumbs/04_1.png" alt="" /></a>
+                        <h3>현대오일뱅크 보너스카드</h3>
+                        <p>현대오일뱅크 주유소와 충전소 이용에 따라 포인트를 적립하고, 현대오일뱅크에서 제공하는 다양한 혜택을 함께 즐길 수 있는 멤버십카드 채널입니다.
+                            <br>http://www.oilbankcard.com</p>
+                    </article>                                    
+                </div>
+                <ul class="actions">
+                    <li><a href="#" class="button">Full List</a></li>
+                </ul>
+            </section>
+
+        <!-- Four -->
+            <section id="four">
+                <h2>Contact</h2>
+                <p>궁금하신 사항은 아래 정보로 연락 바랍니다.</p>
                 <div class="row">                    
                     <div class="col-4 col-12-small">
                         <ul class="labeled-icons">
@@ -108,13 +160,13 @@
         <footer id="footer">
             <div class="inner">
                 <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="https://github.com/hwangsun" class="icon brands fa-github" target="_new"><span class="label">Github</span></a></li>
+                    <li><a href="https://twitter.com/HwaangSun" class="icon brands fa-twitter" target="_new"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/hwangsun" class="icon brands fa-facebook" target="_new"><span class="label">Facebook</span></a></li>
+                    <li><a href="mailto:hwangsun@kakao.com" class="icon solid fa-envelope" target="_new"><span class="label">Email</span></a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net" target="_new">HTML5 UP</a></li>
                 </ul>
             </div>
         </footer>
